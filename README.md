@@ -11,7 +11,7 @@
 <dependencies>
     <dependency>
         <groupId>com.github.relampagorojo93</groupId>
-        <artifactId>PandaCommandsModuleAPI</artifactId>
+        <artifactId>RoyaleMultiWorldsAPI</artifactId>
         <version>version</version>
         <scope>provided</scope>
     </dependency>
