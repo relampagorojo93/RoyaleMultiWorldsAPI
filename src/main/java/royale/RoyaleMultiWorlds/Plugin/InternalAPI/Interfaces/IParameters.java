@@ -1,8 +1,8 @@
-package darkpanda73.InternalAPI.PandaCommandsModule.Interfaces;
+package royale.RoyaleMultiWorlds.Plugin.InternalAPI.Interfaces;
 
 import java.util.List;
 
-import darkpanda73.InternalAPI.PandaCommandsModule.Objects.Pair;
+import royale.RoyaleMultiWorlds.Plugin.InternalAPI.Objects.Pair;
 
 /**
  * Class which contains the information of the parameters used to execute a
@@ -10,7 +10,7 @@ import darkpanda73.InternalAPI.PandaCommandsModule.Objects.Pair;
  * 
  * @author DarkPanda73
  */
-public interface IPandaParameters {
+public interface IParameters {
 
 	/**
 	 * @return The alias used to execute this command. It only contains the alias

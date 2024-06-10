@@ -1,4 +1,4 @@
-package darkpanda73.InternalAPI.PandaCommandsModule.Objects;
+package royale.RoyaleMultiWorlds.Plugin.InternalAPI.Objects;
 
 /**
  * Utility class which is used to offer an instance with a key and a value,

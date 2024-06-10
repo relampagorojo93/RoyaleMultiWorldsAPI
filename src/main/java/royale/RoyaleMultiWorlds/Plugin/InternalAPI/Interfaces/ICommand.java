@@ -1,4 +1,4 @@
-package darkpanda73.InternalAPI.PandaCommandsModule.Interfaces;
+package royale.RoyaleMultiWorlds.Plugin.InternalAPI.Interfaces;
 
 import java.util.List;
 
@@ -7,13 +7,13 @@ import java.util.List;
  * 
  * @author DarkPanda73
  */
-public interface IPandaCommand {
+public interface ICommand {
 
 	/**
 	 * @return The parent command of this actual command. May be null if there's no
 	 *         parent.
 	 */
-	public IPandaCommand getParent();
+	public ICommand getParent();
 
 	/**
 	 * @return The ID of this command. This ID is used to set a static name for the
