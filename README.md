@@ -17,3 +17,5 @@
     </dependency>
 </dependencies>
 ```
+
+version: [![](https://jitpack.io/v/relampagorojo93/RoyaleMultiWorldsAPI.svg)](https://jitpack.io/#relampagorojo93/RoyaleMultiWorldsAPI)
