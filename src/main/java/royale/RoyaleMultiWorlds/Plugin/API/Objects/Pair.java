@@ -1,4 +1,4 @@
-package royale.RoyaleMultiWorlds.Plugin.InternalAPI.Objects;
+package royale.RoyaleMultiWorlds.Plugin.API.Objects;
 
 /**
  * Utility class which is used to offer an instance with a key and a value,

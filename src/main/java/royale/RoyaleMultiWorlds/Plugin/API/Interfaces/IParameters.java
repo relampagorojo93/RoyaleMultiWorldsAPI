@@ -1,8 +1,8 @@
-package royale.RoyaleMultiWorlds.Plugin.InternalAPI.Interfaces;
+package royale.RoyaleMultiWorlds.Plugin.API.Interfaces;
 
 import java.util.List;
 
-import royale.RoyaleMultiWorlds.Plugin.InternalAPI.Objects.Pair;
+import royale.RoyaleMultiWorlds.Plugin.API.Objects.Pair;
 
 /**
  * Class which contains the information of the parameters used to execute a

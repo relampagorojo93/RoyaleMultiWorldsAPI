@@ -1,11 +1,12 @@
-package royale.RoyaleMultiWorlds.Plugin.InternalAPI.Events;
+package royale.RoyaleMultiWorlds.Plugin.API.Events;
 
+import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-import royale.RoyaleMultiWorlds.Plugin.InternalAPI.Interfaces.ICommand;
-import royale.RoyaleMultiWorlds.Plugin.InternalAPI.Interfaces.IParameters;
+import royale.RoyaleMultiWorlds.Plugin.API.Interfaces.ICommand;
+import royale.RoyaleMultiWorlds.Plugin.API.Interfaces.IParameters;
 
 public abstract class CommandUsageEvent extends Event implements Cancellable {
 
@@ -23,13 +24,19 @@ public abstract class CommandUsageEvent extends Event implements Cancellable {
 		return handlerList;
 	}
 
+	private Player player;
 	private ICommand command;
 	private IParameters parameters;
 
-	public CommandUsageEvent(ICommand command, IParameters parameters) {
+	public CommandUsageEvent(Player player, ICommand command, IParameters parameters) {
 		super();
+		this.player = player;
 		this.command = command;
 		this.parameters = parameters;
+	}
+
+	public Player getPlayer() {
+		return this.player;
 	}
 
 	public ICommand getCommand() {

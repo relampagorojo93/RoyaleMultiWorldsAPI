@@ -1,4 +1,4 @@
-package royale.RoyaleMultiWorlds.Plugin.InternalAPI.Interfaces;
+package royale.RoyaleMultiWorlds.Plugin.API.Interfaces;
 
 import java.util.List;
 

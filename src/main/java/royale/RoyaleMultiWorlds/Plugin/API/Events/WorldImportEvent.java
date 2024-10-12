@@ -1,4 +1,4 @@
-package royale.RoyaleMultiWorlds.Plugin.InternalAPI.Events;
+package royale.RoyaleMultiWorlds.Plugin.API.Events;
 
 import java.io.File;
 
@@ -6,9 +6,9 @@ import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-import royale.RoyaleMultiWorlds.Plugin.InternalAPI.Interfaces.IWorld;
+import royale.RoyaleMultiWorlds.Plugin.API.Services.PlayerInteractions.Objects.Worlds.CreateWorldRequestInput.WorldData;
 
-public abstract class WorldImportEvent<T extends IWorld> extends Event implements Cancellable {
+public class WorldImportEvent extends Event implements Cancellable {
 
 	private static final HandlerList handlerList = new HandlerList();
 
@@ -24,18 +24,18 @@ public abstract class WorldImportEvent<T extends IWorld> extends Event implement
 		return handlerList;
 	}
 
-	private T world;
+	private WorldData worldData;
 	private File worldFolder;
 	private boolean cancelled;
 
-	public WorldImportEvent(T world, File worldFolder) {
+	public WorldImportEvent(WorldData world, File worldFolder) {
 		super();
-		this.world = world;
+		this.worldData = world;
 		this.worldFolder = worldFolder;
 	}
 
-	public T getWorld() {
-		return this.world;
+	public WorldData getWorldData() {
+		return this.worldData;
 	}
 
 	public File getWorldFolder() {
