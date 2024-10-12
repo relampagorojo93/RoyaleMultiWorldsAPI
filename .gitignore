@@ -1,1 +1,6 @@
-/target/
+exports/
+target/
+.settings/
+.project/
+.gitignore/
+.classpath/
